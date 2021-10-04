@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produkts",
+  "info": {
+    "name": "Meble",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nazwa": {
+      "type": "string"
+    },
+    "obrazy": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "opis": {
+      "type": "richtext"
+    },
+    "cena": {
+      "type": "decimal"
+    },
+    "kategoria": {
+      "via": "meble",
+      "model": "kategoria"
+    }
+  }
+}

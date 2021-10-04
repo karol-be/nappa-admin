@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kategorie",
+  "info": {
+    "name": "Kategorie",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nazwa": {
+      "type": "string"
+    },
+    "opis": {
+      "type": "richtext"
+    },
+    "meble": {
+      "collection": "produkt",
+      "via": "kategoria"
+    }
+  }
+}
