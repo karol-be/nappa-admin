@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "produkts",
+  "collectionName": "meble",
   "info": {
     "name": "Meble",
     "description": ""
@@ -13,7 +13,19 @@
   "pluginOptions": {},
   "attributes": {
     "nazwa": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "kategoria": {
+      "via": "meble",
+      "model": "kategoria"
+    },
+    "opis": {
+      "type": "richtext"
+    },
+    "cena": {
+      "type": "decimal",
+      "required": true
     },
     "obrazy": {
       "collection": "file",
@@ -26,16 +38,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "opis": {
-      "type": "richtext"
-    },
-    "cena": {
-      "type": "decimal"
-    },
-    "kategoria": {
-      "via": "meble",
-      "model": "kategoria"
     }
   }
 }

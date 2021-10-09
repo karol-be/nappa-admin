@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/produkts",
-      "handler": "produkt.find",
+      "path": "/mebles",
+      "handler": "meble.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/produkts/count",
-      "handler": "produkt.count",
+      "path": "/mebles/count",
+      "handler": "meble.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/produkts/:id",
-      "handler": "produkt.findOne",
+      "path": "/mebles/:id",
+      "handler": "meble.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/produkts",
-      "handler": "produkt.create",
+      "path": "/mebles",
+      "handler": "meble.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/produkts/:id",
-      "handler": "produkt.update",
+      "path": "/mebles/:id",
+      "handler": "meble.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/produkts/:id",
-      "handler": "produkt.delete",
+      "path": "/mebles/:id",
+      "handler": "meble.delete",
       "config": {
         "policies": []
       }
