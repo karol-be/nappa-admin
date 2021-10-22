@@ -1,3 +1,5 @@
+console.log({{name: env('CLOUDINARY_NAME'), apikey:env('CLOUDINARY_API_KEY'), apisecret: env('CLOUDINARY_API_SECRET') });
+
     module.exports = ({ env }) => ({
         upload: {
           provider: 'cloudinary',
