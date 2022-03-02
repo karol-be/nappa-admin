@@ -38,6 +38,14 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "priorytet": {
+      "type": "integer"
+    },
+    "wlasciwosci": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meble.wlasciwosci"
     }
   }
 }

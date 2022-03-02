@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_meble_wlasciwoscis",
+  "info": {
+    "name": "wlasciwosci",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "mechanizmRozkladania": {
+      "type": "enumeration",
+      "enum": [
+        "Delfin",
+        "Wywrotka",
+        "Brak"
+      ]
+    },
+    "funkcjaSpania": {
+      "type": "boolean"
+    },
+    "pojemnikNaPosciel": {
+      "type": "boolean"
+    },
+    "wysokosc": {
+      "type": "string"
+    },
+    "szerokosc": {
+      "type": "string"
+    },
+    "glebokosc": {
+      "type": "string"
+    }
+  }
+}
